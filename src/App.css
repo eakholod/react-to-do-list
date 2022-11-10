@@ -1,0 +1,123 @@
+html, body, #root, .bodyStyle {
+  height: 100%;
+}
+
+.bodyStyle{
+  background-color: #49796B;
+}
+
+.style1 {
+  font-family: FreeMono, monospace;
+  color: white;
+
+}
+
+.style1 button {
+  font-family: inherit;
+}
+
+.label-area{
+  font-size: 25px;
+  background-color: #49796B;
+  border: 2px #49796B solid;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 5px; 
+  display: inline-block;
+  
+}
+
+.input-area{
+  border: 2px #00AB66 solid;
+  border-radius: 6px;
+  margin: 5px 5px 5px 5px; 
+  
+
+}
+
+.submit-button{
+  font-size: 15px ;
+  background-color: #49796B;
+  border: 2px #49796B solid;
+  color: white;
+  border-radius: 6px;
+  margin: 5px; 
+  padding: 2px 6px;
+}
+
+.todos-tasks{
+  border: 2px #00AB66 solid; 
+  border-radius: 6px;
+  padding: 5px 30px 5px 30px;
+
+}
+
+.todos-tasks li{
+  border: 2px #00AB66 solid;
+  border-radius: 6px;
+  padding: 15px 15px 15px 20px;
+  margin: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.delete-button{
+  background-color: red;
+  border: 2px red solid;
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+.complete-button{
+  background-color: green;
+  border: 2px green solid;
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+.edit-button{
+  background-color: grey;
+  border: 2px grey solid;
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+
+.checkmark {
+  display:inline-block;
+  width: 22px;
+  height:22px;
+  transform: rotate(45deg);
+}
+
+.checkmark_stem {
+  position: absolute;
+  width:3px;
+  height:9px;
+  background-color:#ccc;
+  left:11px;
+  top:6px;
+}
+
+.checkmark_kick {
+  position: absolute;
+  width:3px;
+  height:3px;
+  background-color:#ccc;
+  left:8px;
+  top:12px;
+}
+
+.todoContent{
+  display: flex;
+  align-items: center;
+}
