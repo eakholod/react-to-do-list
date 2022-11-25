@@ -1,6 +1,7 @@
 import React from "react";
+import { Task } from "../types";
 
-function Task(props:{name:string}) {
+function TaskComponent(props: Task) {
   return (
     <li>
       <div className="todoContent">{props.name}</div>
@@ -19,4 +20,4 @@ function Task(props:{name:string}) {
   );
 }
 
-export default Task;
+export default TaskComponent;

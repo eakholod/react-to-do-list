@@ -1,12 +1,16 @@
 import React from "react";
-import Task from "./task";
+import { useSelector } from "react-redux";
+import TaskComponent from "./task";
+import { Task } from "../types";
 
 function List() {
+  const state = useSelector((state) => state as { tasks: Task[] });
+
   return (
     <ul id="todos" className="todos-tasks">
-      <Task name="Task 1"/>
-      <Task name="Task 2"/>
-      <Task name="Task 3"/>
+      {state.tasks.map(function (task) {
+        return <TaskComponent key={task.id} name={task.name} id={task.id} />;
+      })}
     </ul>
   );
 }
