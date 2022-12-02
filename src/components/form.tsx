@@ -15,10 +15,13 @@ function Form() {
 
   return (
     <form id="todoForm" onSubmit={handleSubmit}>
+
       <label htmlFor="tdo" className="label-area">
         To Do List
       </label>
+
       <br />
+
       <input
         type="text"
         className="input-area"
@@ -28,9 +31,11 @@ function Form() {
         }}
       />
       <br />
+
       <button type="submit" className="submit-button">
         Submit
       </button>
+      
     </form>
   );
 }

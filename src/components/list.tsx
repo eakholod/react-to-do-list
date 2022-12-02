@@ -9,7 +9,7 @@ function List() {
   return (
     <ul id="todos" className="todos-tasks">
       {state.tasks.map(function (task) {
-        return <TaskComponent key={task.id} name={task.name} id={task.id} />;
+        return <TaskComponent key={task.id} name={task.name} id={task.id} isDone={task.isDone} />;
       })}
     </ul>
   );

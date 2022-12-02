@@ -2,6 +2,7 @@ import { ADD_TASK, COMPLETE_TASK, DELETE_TASK, EDIT_TASK } from "./actionTypes";
 
 export type Task = {
   name?: string;
+  isDone?: boolean;
   id: string;
 };
 

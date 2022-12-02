@@ -14,17 +14,46 @@ const initialState: InitialState = {
 export default (state = initialState, action: Action) => {
   switch (action.type) {
     case ADD_TASK:
-      const updatedTasks = state.tasks.concat(action.payload);
+      const tasksWithNewTask = state.tasks.concat(action.payload);
       return {
         ...state,
-        tasks: updatedTasks,
+        tasks: tasksWithNewTask,
       };
+
     case DELETE_TASK:
-      return state;
+      const tasksWithDeletedTask = state.tasks.filter(function (currentTask) {
+        if (currentTask.id !== action.payload.id) return true;
+        else return false;
+      });
+      return {
+        ...state,
+        tasks: tasksWithDeletedTask,
+      };
+
     case EDIT_TASK:
-      return state;
+      const tasksWithEditedTask = state.tasks.map(function (currentTask) {
+        if(currentTask.id === action.payload.id)
+        return {...currentTask, name:action.payload.name}
+        else return currentTask;
+      })
+      return { 
+        ...state,
+        tasks: tasksWithEditedTask,
+      
+      }
+
     case COMPLETE_TASK:
-      return state;
+      const tasksWithCompletedTask = state.tasks.map(function (currentTask) {
+        const toggleIsDone = !currentTask.isDone;
+        if (currentTask.id === action.payload.id)
+          return { ...currentTask, isDone: toggleIsDone };
+        else return currentTask;
+      });
+      return {
+        ...state,
+        tasks: tasksWithCompletedTask,
+      };
+
     default:
       return state;
   }

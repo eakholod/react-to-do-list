@@ -1,59 +1,137 @@
-html, body, #root, .bodyStyle {
-  height: 100%;
+body,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
 }
 
-.bodyStyle{
-  background-color: #49796B;
+
+body {
+  background-color: #49796b;
 }
 
 .style1 {
   font-family: FreeMono, monospace;
   color: white;
-
 }
 
 .style1 button {
   font-family: inherit;
 }
 
-.label-area{
+.label-area {
   font-size: 25px;
-  background-color: #49796B;
-  border: 2px #49796B solid;
+  background-color: #49796b;
+  border: 2px #49796b solid;
   border-radius: 6px;
   padding: 5px;
-  margin: 5px; 
+  margin: 5px;
   display: inline-block;
-  
 }
 
-.input-area{
-  border: 2px #00AB66 solid;
+.input-area {
+  border: 2px #00ab66 solid;
   border-radius: 6px;
-  margin: 5px 5px 5px 5px; 
-  
-
+  margin: 5px 5px 5px 5px;
 }
 
-.submit-button{
-  font-size: 15px ;
-  background-color: #49796B;
-  border: 2px #49796B solid;
+.submit-button {
+  font-size: 15px;
+  background-color: #49796b;
+  border: 2px #49796b solid;
   color: white;
   border-radius: 6px;
-  margin: 5px; 
+  margin: 5px;
   padding: 2px 6px;
 }
 
-.todos-tasks{
-  border: 2px #00AB66 solid; 
+.todos-tasks {
+  border: 2px #00ab66 solid;
   border-radius: 6px;
   padding: 5px 30px 5px 30px;
-
 }
 
-.todos-tasks li{
-  border: 2px #00AB66 solid;
+.todos-tasks li {
+  border: 2px #00ab66 solid;
   border-radius: 6px;
   padding: 15px 15px 15px 20px;
   margin: 5px;
@@ -62,62 +140,59 @@ html, body, #root, .bodyStyle {
   justify-content: space-between;
 }
 
-.delete-button{
+.delete-button {
   background-color: red;
   border: 2px red solid;
   border-radius: 6px;
   padding: 2px 6px;
   margin-left: 5px;
   margin-right: 5px;
-
 }
 
-.complete-button{
+.complete-button {
   background-color: green;
   border: 2px green solid;
   border-radius: 6px;
   padding: 2px 6px;
   margin-left: 5px;
   margin-right: 5px;
-
 }
 
-.edit-button{
+.edit-button {
   background-color: grey;
   border: 2px grey solid;
   border-radius: 6px;
   padding: 2px 6px;
   margin-left: 5px;
   margin-right: 5px;
-  
 }
 
 .checkmark {
-  display:inline-block;
+  display: inline-block;
   width: 22px;
-  height:22px;
+  height: 22px;
   transform: rotate(45deg);
 }
 
 .checkmark_stem {
   position: absolute;
-  width:3px;
-  height:9px;
-  background-color:#ccc;
-  left:11px;
-  top:6px;
+  width: 3px;
+  height: 9px;
+  background-color: #ccc;
+  left: 11px;
+  top: 6px;
 }
 
 .checkmark_kick {
   position: absolute;
-  width:3px;
-  height:3px;
-  background-color:#ccc;
-  left:8px;
-  top:12px;
+  width: 3px;
+  height: 3px;
+  background-color: #ccc;
+  left: 8px;
+  top: 12px;
 }
 
-.todoContent{
+.todoContent {
   display: flex;
   align-items: center;
 }

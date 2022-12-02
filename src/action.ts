@@ -8,21 +8,24 @@ function addTask (payload: Task) {
   };
 };
 
-const deleteTask = () => {
+function deleteTask (payload: Task) {
   return {
     type: DELETE_TASK,
+    payload: payload,
   };
 };
 
-const editTask = () => {
+function editTask (payload: Task){
   return {
     type: EDIT_TASK,
+    payload: payload,
   };
 };
 
-const completeTask = () => {
+function completeTask (payload: Task){
   return {
     type: COMPLETE_TASK,
+    payload: payload,
   };
 };
 
